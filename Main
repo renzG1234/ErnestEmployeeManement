@@ -1,0 +1,28 @@
+import ernestemployeemanagement.ErnestEmployeeManagement;
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+
+/**
+ *
+ * @author User
+ */
+public class ErnestMain  {
+    public static void main(String[] args) {
+        // Create Employee objects using parameterized constructor
+        ErnestEmployeeManagement emp1 = new ErnestEmployeeManagement("Mjay", 1001, "IT", 30000.0);
+        ErnestEmployeeManagement emp2 = new ErnestEmployeeManagement("CaiCai", 1002, "HR", 28000.0);
+        ErnestEmployeeManagement emp3 = new ErnestEmployeeManagement("John", 1003, "Finance", 32000.0);
+
+        // Create Employee using default constructor
+        ErnestEmployeeManagement empDefault = new ErnestEmployeeManagement();
+
+        // Display information of each employee
+        emp1.displayEmployeeInfo();
+        emp2.displayEmployeeInfo();
+        emp3.displayEmployeeInfo();
+        empDefault.displayEmployeeInfo();
+    }
+}
